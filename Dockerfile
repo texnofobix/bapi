@@ -27,7 +27,8 @@ RUN apt-get update \
     build-essential
 
 # Install Poetry
-RUN curl -sSL https://raw.githubusercontent.com/sdispater/poetry/master/get-poetry.py | python
+RUN curl -sSL https://install.python-poetry.org | python3 -
+
 
 # Install runtime deps
 WORKDIR $PYSETUP_PATH
